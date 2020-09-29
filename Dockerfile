@@ -32,16 +32,16 @@ USER asdf
 
 # asdf, erlang
 
-RUN /bin/bash -c "git clone https://github.com/asdf-vm/asdf.git ~/.asdf --branch v0.7.4 && \
+RUN /bin/bash -c "git clone https://github.com/asdf-vm/asdf.git ~/.asdf && \
                   asdf plugin-add erlang https://github.com/asdf-vm/asdf-erlang.git && \
-                  asdf install erlang 22.0 && \
-                  asdf global erlang 22.0"
+                  asdf install erlang 22.0.2 && \
+                  asdf global erlang 22.0.2"
 
 # elixir
 
 RUN /bin/bash -c "asdf plugin-add elixir https://github.com/asdf-vm/asdf-elixir.git && \
-                  asdf install elixir 1.9.1 && \
-                  asdf global elixir 1.9.1"
+                  asdf install elixir 1.10.4 && \
+                  asdf global elixir 1.10.4"
 
 
 # nodejs, yarn
